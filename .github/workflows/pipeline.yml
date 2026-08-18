@@ -32,6 +32,9 @@ jobs:
       - name: Terraform/git/gitleaks/az-cli version check
         run: |
              terraform -v
+             terraform init
+             terraform fmt
+             terraform validate
              git -v
              gitleaks --version
              az -v
