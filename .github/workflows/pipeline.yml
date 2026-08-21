@@ -31,6 +31,7 @@ jobs:
       # Runs a multi line command using the runners shell
       - name: Terraform/git/gitleaks/az-cli version check
         run: |
+             Get-Location
              terraform -v
              terraform init
              terraform fmt
